@@ -1,4 +1,4 @@
-# React -lekce 6
+# React - lekce 6
 
 Tento repozitář obsahuje podklady a cvičení pro 6. lekci kurzu React od Czechitas.
 
