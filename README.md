@@ -13,8 +13,7 @@ V Reactu je to ve skutečnosti mnohem jednodušší. Událost nastavíme danému
 Pokud například chceme reagovat na kliknutí na tlačítko:
 ```jsx
 const Komponenta = () => {
-
-	const handleClick = () => {
+  const handleClick = () => {
     alert('ahoj');
   };
 
@@ -23,7 +22,6 @@ const Komponenta = () => {
       Řekni ahoj
     </button>
   );
-
 };
 ```
 
@@ -35,15 +33,13 @@ Takže např. obsah textového pole můžeme přečíst následovně:
 
 ```jsx
 const Komponenta = () => {
-
   const handleChange = (event) => {
     console.log(event.target.value);
   };
 
   return (
-		<input type="text" onChange={handleChange} />
-	);
-
+    <input type="text" onChange={handleChange} />
+  );
 };
 ```
 
@@ -124,14 +120,14 @@ import React, { useState } from 'react';
 const Pocitadlo = () => {
   const [pocet, setPocet] = useState(0);
 
-	const handleClick = () => {
-		setPocet(pocet + 1);
-	}
+  const handleClick = () => {
+    setPocet(pocet + 1);
+  }
 
   return (
     <button onClick={handleClick}>
-			Počet kliků: {pocet}
-		</button>
+      Počet kliků: {pocet}
+    </button>
   );
 };
 ```
