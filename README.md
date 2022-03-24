@@ -61,7 +61,7 @@ Podobně si můžeme představit stav auta. Nemění se velikost nádrže, poče
 
 Podobně si lze představit stav ve webové aplikace, stav jejích komponent. Zaškrtávací políčko může být zaškrtnuté nebo ne. Vysouvací menu může být otevřené nebo zavřené. V eshopu se může stavem rozumnět počet zboží v košíku, v emailové aplikaci např. počet emailů ve schránce, jméno přihlášeného uživatele, text zprávy, kterou má uživatel rozepsanou.
 
-Stav v JavaScriptu si můžeme jednoduše představit jako proměnnou. Např. nádrž ve našem virtuálním autě:
+Stav v JavaScriptu si můžeme jednoduše představit jako proměnnou. Např. nádrž ve našem virtuálním autě na začátku cesty:
 
 ```jsx
 let tankLevel = 'full';
@@ -70,13 +70,13 @@ let tankLevel = 'full';
 Po dlouhé cestě:
 
 ```jsx
-let tankLevel = 'almost empty';
+tankLevel = 'almost empty';
 ```
 
 Když brzo nenatankujeme, tak:
 
 ```jsx
-let tankLevel = 'empty';
+tankLevel = 'empty';
 ```
 
 ### Stav v Reactu a useState
